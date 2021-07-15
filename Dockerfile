@@ -30,6 +30,10 @@ RUN echo "gem 'sqlite3', '~> 1.3.6'" >> Gemfile && gem install bundler && bundle
 
 VOLUME /app/db/database
 
+RUN bundle update rails
+
+RUN bundle update mimemagic
+
 RUN yarn install --check-files; bundle exec rake assets:precompile
 
 RUN apk del \
