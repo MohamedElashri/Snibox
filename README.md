@@ -7,9 +7,10 @@ To build this image use following command:
 ```bash
 git clone https://github.com/MohamedElashri/Snibox
 docker build -t snibox .```
+
 To use this image 
 
-```docker pull melashri/snibox:latest```
+`docker pull melashri/snibox:latest`
 
 
 Or pass the variables directly (port and bind to a local volume)
