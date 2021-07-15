@@ -9,13 +9,10 @@ git clone https://github.com/MohamedElashri/Snibox
 docker build -t snibox .```
 To use this image 
 
-```
-docker pull melashri/snibox:latest
+```docker pull melashri/snibox:latest```
 
-```
 
 Or pass the variables directly (port and bind to a local volume)
-
 
 ```
 docker run -d --name snibox \
