@@ -26,9 +26,12 @@ RUN git clone https://github.com/MohamedElashri/snibox-1 /app && cd /app && git 
 
 COPY . /app
 
+RUN bundle update --bundler
+
+RUN gem install bundler:1.17.2
+
 RUN bundle update rails
 
-RUN bundle update --bundler
 
 RUN echo "gem 'sqlite3', '~> 1.3.6'" >> Gemfile && gem install bundler && bundle install
 
