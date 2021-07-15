@@ -6,7 +6,8 @@ To build this image use following command:
 
 ```bash
 git clone https://github.com/MohamedElashri/Snibox
-docker build -t snibox .```
+docker build -t snibox .
+```
 
 To use this image 
 
