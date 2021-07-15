@@ -6,8 +6,7 @@ To build this image use following command:
 
 ```bash
 git clone https://github.com/MohamedElashri/Snibox
-docker build -t snibox ./snibox-sqlite
-```
+docker build -t snibox .```
 To use this image 
 
 ```
@@ -23,6 +22,8 @@ docker run -d --name snibox \
               --publish 300:3000 \
               --restart always \
               melashri/snibox:
+
+
 ```
 
 Container runs `rake db:migrate` on every start, in order to create database file if not exist, or update database scheme if required, so backups are highly recommended.
