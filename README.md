@@ -16,14 +16,13 @@ docker pull melashri/snibox:latest
 
 Or pass the variables directly (port and bind to a local volume)
 
+
 ```
 docker run -d --name snibox \
               --volume /path/to/local/db:/app/db/database \
               --publish 300:3000 \
               --restart always \
               melashri/snibox:
-
-
 ```
 
 Container runs `rake db:migrate` on every start, in order to create database file if not exist, or update database scheme if required, so backups are highly recommended.
