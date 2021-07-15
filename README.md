@@ -15,7 +15,7 @@ To use this image
 
 Or pass the variables directly (port and bind to a local volume)
 
-```
+```bash
 docker run -d --name snibox \
               --volume /path/to/local/db:/app/db/database \
               --publish 300:3000 \
