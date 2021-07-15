@@ -2,11 +2,27 @@
 Snibox selfhosted snippet, an sqlite version for my personal use based on [pivpav](https://gitlab.com/pivpav/snibox-sqlite)
 
 
-To build this container use following command:
+To build this image use following command:
 
 ```bash
 git clone https://github.com/MohamedElashri/Snibox
 docker build -t snibox ./snibox-sqlite
+```
+To use this image 
+
+```
+docker pull melashri/snibox:latest
+
+```
+
+Or pass the variables directly (port and bind to a local volume)
+
+```
+docker run -d --name snibox \
+              --volume /path/to/local/db:/app/db/database \
+              --publish 300:3000 \
+              --restart always \
+              melashri/snibox:
 ```
 
 Container runs `rake db:migrate` on every start, in order to create database file if not exist, or update database scheme if required, so backups are highly recommended.
