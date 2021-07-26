@@ -1,4 +1,4 @@
-name: Multi_platform_Build
+name: Multi Platform Build & Push to Dockerhub
 
 on:
   push:
@@ -31,4 +31,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: melashri/ml-workspace:latest
+          tags: melashri/snibox:latest
