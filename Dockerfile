@@ -13,6 +13,7 @@ RUN apk add --no-cache \
 
 WORKDIR /app
 
+ENV GIT_HASH 9e7c9582f5e924dc0a6c07e32bdf56d6681e8afb
 
 ENV RAILS_SERVE_STATIC_FILES=true
 ENV RAILS_ENV production
@@ -21,7 +22,7 @@ ENV NODE_ENV production
 
 ENV SECRET_KEY_BASE="08898973823f6f1d121ce30fb8adc1c559dcfc08f358cfc0298e4aad81b8c9d798e8249e3a4b26c04255cf8b2d71eaf8eda865d173ae3fe6fb1a599d1b1fa260"
 
-RUN git clone https://github.com/MohamedElashri/snibox-1 /app && cd /app 
+RUN git clone https://github.com/MohamedElashri/snibox-1 /app && cd /app && git reset --hard $GIT_HASH
 
 COPY . /app
 
