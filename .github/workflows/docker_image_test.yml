@@ -1,4 +1,4 @@
-name: Multi Platform Build & Push to Dockerhub
+name: Build test and push to test tag
 
 on:
   push:
