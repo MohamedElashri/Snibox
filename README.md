@@ -4,8 +4,8 @@ I will try to maintain and develop some new features as I need. Contributions ar
 
 ## Changelog
 - Added `LaTeX` support
-- Added TOML support
-- Added Octave/Matlab support
+- Added `TOML` support
+- Added `Octave`/`Matlab` support
 
 
 
