@@ -20,5 +20,5 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: melashri/snibox:test
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}     
