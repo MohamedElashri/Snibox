@@ -1,7 +1,15 @@
 # Snibox
 Snibox selfhosted snippet, an sqlite version for my personal use based on [pivpav](https://gitlab.com/pivpav/snibox-sqlite)
+I will try to maintain and develop some new features as I need. Contributions are welcomed from everyone. 
+
+## Changelog
+- Added `LaTeX` support
+- Added TOML support
+- Added Octave/Matlab support
 
 
+
+## Build
 To build this image use following command:
 
 ```bash
@@ -26,7 +34,7 @@ docker run -d --name snibox \
 
 Container runs `rake db:migrate` on every start, in order to create database file if not exist, or update database scheme if required, so backups are highly recommended.
 
-## Environment variables
+### Environment variables
 
 `DATABASE` - Defines sqlite3 database file location within container.
 
