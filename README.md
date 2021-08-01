@@ -6,6 +6,7 @@ I will try to maintain and develop some new features as I need. Contributions ar
 - Added `LaTeX` support
 - Added `TOML` support
 - Added `Octave`/`Matlab` support
+- Added support to `arm` and `arm64` 
 
 
 
