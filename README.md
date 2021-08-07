@@ -1,3 +1,4 @@
+[![Docker Image CI](https://github.com/MohamedElashri/Snibox/actions/workflows/docker-image.yml/badge.svg)](https://github.com/MohamedElashri/Snibox/actions/workflows/docker-image.yml)
 # Snibox
 Snibox selfhosted snippet, an sqlite version for my personal use based on [pivpav](https://gitlab.com/pivpav/snibox-sqlite)
 I will try to maintain and develop some new features as I need. Contributions are welcomed from everyone. 
