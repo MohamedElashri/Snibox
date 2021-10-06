@@ -32,4 +32,5 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
-          tags: melashri/snibox:latest
+          tags: melashri/snibox:latest,melashri/sinbox:v${{ github.run_number }}
+
