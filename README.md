@@ -4,6 +4,8 @@ Snibox selfhosted snippet, an sqlite version for my personal use based on [pivpa
 I will try to maintain and develop some new features as I need. Contributions are welcomed from everyone. 
 
 ## Changelog
+- Increase file title and content length
+- Increase snippet title length
 - Added `LaTeX` support
 - Added `TOML` support
 - Added `Octave`/`Matlab` support
