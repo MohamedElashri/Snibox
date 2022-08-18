@@ -21,6 +21,8 @@ git clone https://github.com/MohamedElashri/Snibox
 docker build -t snibox .
 ```
 
+## Usage
+
 To use this image 
 
 `docker pull melashri/snibox:latest`
@@ -35,6 +37,24 @@ docker run -d --name snibox \
               --restart always \
               melashri/snibox
 ```
+
+### docker-compose 
+
+You can use the follwing `docker-compose.yml` file
+
+```
+version: '3'
+services:
+    snibox:
+        container_name: snibox
+        volumes:
+            - '/home/user/snibox/app/db:/app/db/database'
+        ports:
+            - '3000:3000'
+        restart: always
+        image: melashri/snibox
+```      
+
 
 Container runs `rake db:migrate` on every start, in order to create database file if not exist, or update database scheme if required, so backups are highly recommended.
 
