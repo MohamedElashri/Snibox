@@ -1,0 +1,11 @@
+---
+version: '3'
+services:
+    snibox:
+        container_name: snibox
+        volumes:
+            - '/home/user/snibox/app/db:/app/db/database'
+        ports:
+            - '3000:3000'
+        restart: always
+        image: melashri/snibox
